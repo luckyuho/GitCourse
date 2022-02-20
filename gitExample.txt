@@ -19,3 +19,4 @@ git reflog (show all history, even deleted branches) => git checkout <hash>, git
 git branch -m <old_name> <new_name> (rename branch)
 
 # section 4 (branch merge)
+Branch test
