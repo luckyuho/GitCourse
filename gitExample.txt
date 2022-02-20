@@ -36,6 +36,6 @@ Git fetch --prune (sync local and remote status and prune difference)
 *tips: sync remote master to local master: 1. git checkout master, 2. git merge origin/master
 git pull = git fetch + git merge origin/master
 Sync process: 1. git pull, 2. Git push origin master (which is based on you're sure there is no conflict. if there is any conflict, use git fetch)
-git branch -vv (show remote and local branch status)
+git branch -vv (show remote and local branch status and their relation)
 cat .git/FETCH_HEAD (show which remote branch is default for push/pull)
 
