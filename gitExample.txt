@@ -1,2 +1,13 @@
-git init
-git config -l
+# section 2 (fundamental)
+git init (initialize an empty git repository)
+git config -l (show author and email)
+Git config user.name / git config user.email (using local author and email instead using global information)
+git status (show the working tree status)
+git add (add file contents to the index)
+git rm (remove files from the working tree and from the index)
+git restore (restore working tree files)
+git commit (records the changes to repository)
+git log (show commit logs)
+Git shortlog (show commit logs and all author)
+
+# section 3 (branch)
