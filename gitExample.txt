@@ -38,4 +38,6 @@ git pull = git fetch + git merge origin/master
 Sync process: 1. git pull, 2. Git push origin master (which is based on you're sure there is no conflict. if there is any conflict, use git fetch)
 git branch -vv (show remote and local branch status and their relation)
 cat .git/FETCH_HEAD (show which remote branch is default for push/pull)
+git push -u origin <new_branch_name> (create new branch and connect with local branch)
+
 
