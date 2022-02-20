@@ -20,3 +20,9 @@ git branch -m <old_name> <new_name> (rename branch)
 
 # section 4 (branch merge)
 git ls-files -s (show all files, including conflicted file from merged braches)
+git merge <branch_name> (should be on master branch and choose which branch to merge, for many people to use)
+git rebase <branch_name> (one-way merge, for one user)
+
+# section 5 (git remote)
+*using SSH or Token. (Not to use http!!!)
+
