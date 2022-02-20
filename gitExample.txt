@@ -5,13 +5,15 @@ Git config user.name / git config user.email (using local author and email inste
 git status (show the working tree status)
 git add (add file contents to the index)
 git rm (remove files from the working tree and from the index)
-git restore (restore working tree files)
+git restore <file_name> (restore working tree files and discard changes)
 git commit (records the changes to repository)
 git log (show commit logs)
 Git shortlog (show commit logs and all author)
 
 # section 3 (branch)
 git branch (list all branches)
-git branch <branch_name> (create branch)
+git branch <branch_name> (create branch) *recommend => git checkout -b <branch_name>
 git branch --delete <branch_name> (delete branch)
 git checkout <branch_name> (switch the current activate branch)
+git reflog (show all history, even deleted branches) => git checkout <hash>, git checkout -b <branch_name>
+git branch -m <old_name> <new_name> (rename branch)
