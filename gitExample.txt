@@ -17,3 +17,5 @@ git branch --delete <branch_name> (delete branch)
 git checkout <branch_name> (switch the current activate branch)
 git reflog (show all history, even deleted branches) => git checkout <hash>, git checkout -b <branch_name>
 git branch -m <old_name> <new_name> (rename branch)
+
+# section 4 (branch merge)
