@@ -1,0 +1,43 @@
+# section 2 (fundamental)
+git init (initialize an empty git repository)
+git config -l (show author and email)
+Git config user.name / git config user.email (using local author and email instead using global information)
+git status (show the working tree status)
+git add (add file contents to the index)
+git rm (remove files from the working tree and from the index)
+git restore <file_name> (restore working tree files and discard changes)
+git commit (records the changes to repository)
+git log (show commit logs)
+Git shortlog (show commit logs and all author)
+
+# section 3 (branch)
+git branch (list all branches)
+git branch <branch_name> (create branch) *recommend => git checkout -b <branch_name>
+git branch --delete <branch_name> (delete branch)
+git checkout <branch_name> (switch the current activate branch)
+git reflog (show all history, even deleted branches) => git checkout <hash>, git checkout -b <branch_name>
+git branch -m <old_name> <new_name> (rename branch)
+
+# section 4 (branch merge)
+git ls-files -s (show all files, including conflicted file from merged braches)
+git merge <branch_name> (should be on master branch and choose which branch to merge, for many people to use)
+git rebase <branch_name> (one-way merge, for one user)
+
+# section 5 (git remote)
+*using SSH or Token. (Not to use http!!!)
+
+# section 6 (interaction with git remote)
+git remote add <remote_name> <http>
+git remote rm <remote_name> <http>
+git remote show <remote_name> (connect to net and show latest status, like new branch)
+git push (upload file to GitHub)
+git fetch (sync local and remote status)
+Git fetch --prune (sync local and remote status and prune difference)
+*tips: sync remote master to local master: 1. git checkout master, 2. git merge origin/master
+git pull = git fetch + git merge origin/master
+Sync process: 1. git pull, 2. Git push origin master (which is based on you're sure there is no conflict. if there is any conflict, use git fetch)
+git branch -vv (show remote and local branch status and their relation)
+cat .git/FETCH_HEAD (show which remote branch is default for push/pull)
+git push -u origin <new_branch_name> (create new branch and connect with local branch)
+
+
